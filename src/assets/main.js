@@ -5,6 +5,9 @@ let message = document.getElementById("message");
 function guess() {
     let input = document.getElementById('user-guess');
     //add functionality to guess function here
+    if(!validateInput(input)){
+        return false;
+    } else{attempt++;}
 }
 
 //implement new functions here
@@ -32,3 +35,4 @@ function validateInput(input){
         return false;
     }
 }
+
