@@ -20,6 +20,15 @@ function setHiddenFields(){
 
 }
 
-function setMessage(message){
- message.innerHTML = message;
+function setMessage(input){
+ message.innerHTML = input;
+}
+
+function validateInput(input){
+    if(input.length = 4){
+        return true;
+    } else{
+        setMessage("Guesses must be exactly 4 characters long.");
+        return false;
+    }
 }
