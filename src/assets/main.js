@@ -1,6 +1,8 @@
 let answer = document.getElementById('answer');
 let attempt = document.getElementById('attempt');
 let message = document.getElementById("message");
+let result = document.getElementById("result");
+let guessNum = document.getElementById('guess')
 
 function guess() {
     let input = document.getElementById('user-guess');
@@ -36,3 +38,7 @@ function validateInput(input){
     }
 }
 
+function getResults(input){
+result.innerHTML ='<span class="col-md-6" id ="result"> + input + </span>';
+
+}
